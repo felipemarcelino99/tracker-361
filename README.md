@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Tracker 361
+Projeto desenvolvido como desafio para 361, utilizando tecnologias modernas como Next.js e Tailwind CSS.
 
-## Getting Started
+📸 Demonstração
+Acesse a versão em produção: tracker-361.vercel.app
 
-First, run the development server:
+🛠️ Tecnologias Utilizadas
+Next.js – Framework React para aplicações web modernas.
 
-```bash
+TypeScript – Tipagem estática para JavaScript.
+
+Tailwind CSS – Estilização com classes utilitárias.
+
+Vercel – Deploy contínuo e hospedagem.
+
+📂 Estrutura do Projeto
+src/components: Componentes reutilizáveis da interface.
+
+src/app: Estrutura de rotas e páginas.
+
+public: Arquivos estáticos, como imagens e ícones.
+
+🚧 Funcionalidades
+Layout responsivo para desktop e mobile.
+
+Organização semântica de menus e navegação.
+
+📦 Instalação
+Clone o repositório e instale as dependências:
+
+bash
+Copy
+Edit
+git clone https://github.com/felipemarcelino99/tracker-361.git
+cd tracker-361
+npm install
+Inicie o servidor de desenvolvimento:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse http://localhost:3000 no seu navegador para visualizar o projeto.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📄 Licença
+Este projeto está licenciado sob a MIT License.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Se desejar, posso ajudar a adicionar badges de status, capturas de tela ou instruções específicas de deploy no Vercel. Gostaria de incluir mais alguma seção?
