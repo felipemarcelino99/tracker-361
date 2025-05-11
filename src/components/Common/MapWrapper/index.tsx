@@ -5,7 +5,10 @@ import MapUpdater from "../MapUpdater";
 
 export default function MapWrapper() {
   return (
-    <div className="w-full h-130 mt-4 rounded-2xl overflow-hidden">
+    <div
+      className="w-full h-130 mt-4 rounded-2xl overflow-hidden"
+      data-testid="mapWrapper"
+    >
       <Map
         defaultZoom={5}
         defaultCenter={{ lat: -23.5475, lng: -46.6361 }}

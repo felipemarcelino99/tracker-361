@@ -33,7 +33,11 @@ export default function Filter() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="w-full">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="w-full"
+      data-testid="fFilter"
+    >
       <div className="flex items-center w-full max-w-full py-5 border-b border-[#002D44]">
         <div className="flex items-center justify-center md:justify-between gap-5 w-full max-w-full flex-wrap">
           <div>

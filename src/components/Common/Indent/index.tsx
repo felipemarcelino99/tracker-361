@@ -3,5 +3,9 @@ type IndentProps = {
 };
 
 export default function Indent({ children }: IndentProps) {
-  return <div className="indent">{children}</div>;
+  return (
+    <div className="indent" data-testid="indent">
+      {children}
+    </div>
+  );
 }

@@ -18,7 +18,7 @@ export default function Title({
   const classes = titleVariants({ variant });
 
   return (
-    <Tag className={classes} aria-label={label} {...props}>
+    <Tag className={classes} aria-label={label} {...props} data-testid="title">
       {label}
     </Tag>
   );

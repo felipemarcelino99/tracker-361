@@ -13,6 +13,7 @@ const InputRadio = React.forwardRef<HTMLInputElement, InputRadioProps>(
         ref={ref}
         className="custom-input-radio"
         {...rest}
+        data-testid="inputRadio"
       />
       <span>{label}</span>
     </label>

@@ -25,7 +25,7 @@ export default function VehicleMarker({ vehicle }: VehicleMarkerProps) {
   };
 
   return (
-    <>
+    <div data-testId="VehicleMarker">
       <Marker
         position={{ lat: vehicle.lat, lng: vehicle.lng }}
         onClick={() => setShowInfo(true)}
@@ -56,6 +56,6 @@ export default function VehicleMarker({ vehicle }: VehicleMarkerProps) {
           </div>
         </InfoWindow>
       )}
-    </>
+    </div>
   );
 }

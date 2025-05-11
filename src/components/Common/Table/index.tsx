@@ -18,7 +18,10 @@ export default function Table() {
   const { vehicles, observerRef, isLoading } = useVehicles();
 
   return (
-    <section className="pb-10 overflow-x-scroll md:overflow-x-hidden">
+    <section
+      className="pb-10 overflow-x-scroll md:overflow-x-hidden"
+      data-testid="table"
+    >
       <table className="table-content">
         <thead>
           <tr>
