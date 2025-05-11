@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #001622;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.indent {
+  @apply max-w-full px-5 md:px-2.5 md:max-w-[1128px] w-full mx-auto;
+}
+
+.title {
+  @apply text-lg font-medium text-white;
+}
+
+.container-input-radio {
+  @apply flex items-center gap-3.5 text-white font-[family-name:var(--font-inter)] text-xs font-medium;
+}
+
+.custom-input-radio {
+  @apply appearance-none w-5 h-5 rounded-full border-2 border-[#0095E4] relative
+  after:content-[''] after:absolute after:w-2.5 after:h-2.5
+  after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2
+  checked:after:bg-[#0095E4] after:rounded-full;
+}
+
+.button {
+  @apply min-w-32 font-semibold text-center block py-3 max-w-[150px] w-full rounded-lg active:scale-[.9] shadow-lg transition-all ease-in;
+}
+
+.map-container {
+  @apply bg-[#001622] border-1 border-[#002D44] rounded-2xl p-4 my-6;
+}
+
+@layer components {
+  .table-content {
+    @apply min-w-[575px] w-full text-white align-middle bg-[#001622] border-separate border-spacing-0;
+  }
+
+  .table-content th,
+  .table-content td {
+    @apply border border-[#002D44] text-center;
+  }
+
+  .table-content thead tr:first-child th:first-child {
+    @apply rounded-tl-2xl;
+  }
+
+  .table-content thead tr:first-child th:last-child {
+    @apply rounded-tr-2xl;
+  }
+
+  .table-content tbody tr:last-child td:first-child {
+    @apply rounded-bl-2xl;
+  }
+
+  .table-content tbody tr:last-child td:last-child {
+    @apply rounded-br-2xl;
+  }
+
+  .table-header {
+    @apply text-white font-bold text-lg py-4;
+  }
+
+  .table-text {
+    @apply text-white text-sm py-2.5 font-[family-name:var(--font-inter)];
+  }
 }
